@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    font-style: normal;
+    background-position: center;
+  }
+  
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("backgroundflowers.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+
+}
+
+.container { /*main container*/
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-family: "poppins", sans-serif;
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 255, 255, 0.75); /* calm luh glow*/
+}
+
+li {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration-style: solid;
+    text-decoration-color: #237cdb;
+    
+
+}
+
+li:hover {
+    transform: translateY(-3px) scale(1.015);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.45);
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0%;
+}
+
+.deletetask {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+#taskinp {
+    width: 80%;
+    padding: 6px;
+    background-color: white;
+    border: 2px solid #6badf5;
+    border-radius: 20px; /* rounding edges */
+    font-size: small;
+    
+}
+
+
+#addtask {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    transition: 0.3s;
+
+}
+
+
+
+#addtask:active { /* cool lil y axis translation to make click animation*/
+  background-color: #2108dc;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+
+.delete-icon { /* reg delete icon */
+    width: 24px; 
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.delete-icon:hover { /* animation for delete icon*/
+    transform: scale(1.25);
+    opacity: 0.8;
+}
+
+#delete-all {
+    position: fixed; 
+    bottom: 20px;  
+    left: 20px;  
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#delete-all:hover { /* animation for delete all icon*/
+    transform: scale(1.15);
+    opacity: 0.9;
+}
