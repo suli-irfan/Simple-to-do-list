@@ -14,3 +14,4 @@ It allows users to add, delete, and mark tasks as completed, with persistent sto
 2. Make sure all files are in the same folder (`index.html`, `todolist.css`, `todolist.js`, `delete.png`)
 3. Open `index.html` in your browser
 4. Start adding tasks ✅
+<img width="1900" height="883" alt="image" src="https://github.com/user-attachments/assets/7c0efdcd-dbb4-49de-8171-c2ef9d6ce715" />
